@@ -1,0 +1,31 @@
+name: Build LaTeX document
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+      - name: Install deps
+        run: |
+          sudo apt-get update && sudo apt-get -y install poppler-utils
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: resume.tex
+      - name: copy file
+        uses: canastro/copy-file-action@master
+        with:
+          source: "resume.pdf"
+          target: "generated/resume.pdf"
+      - name: Pushes to kodieglosser.com repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'generated'
+          destination-directory: 'public/files'
+          destination-github-username: 'kodieGlosser'
+          destination-repository-name: 'kodieglosser.com'
+          user-email: kodieglosser@gmail.com
+          target-branch: main
