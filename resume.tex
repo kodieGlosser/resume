@@ -1,0 +1,144 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Kodie Glosser}}\\
+	Austin, TX $\cdot$ kodieglosser@gmail.com $\cdot$ (419)494-1868 $\cdot$ linkedin.com/in/kodieglosser\\
+\end{center}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{IBM} \hfill Austin, TX\\
+\textit{Development Team Lead - Senior Software Engineer} \hfill January 2021 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Squad lead of multinational team responsible for the dynamic provisioning and configuration of Kubernetes clusters for IBM’s container service offerings
+	\item Define business objectives and technical requirements for involved teams including setting timelines, writing epics, and acting as a liaison between development and management
+	\item Architecting and designing our next generation container runtime offering, HyperShift
+	\item Ensure delivery of BI-Weekly kubernetes minor/major version and security updates to our customers with zero down time
+	\item Designed a cloud agnostic runtime system; IBM Cloud Satellite, to allow any cloud provider to run on our managed OpenShift offering
+	\item Develop and maintain dozens of Go microservices providing core APIs and event-driven backend
+	\item Responsible for oversight of PCI, SOC2, GDPR, EU Cloud, and FS Cloud Compliance
+	\item Regularly work with high value customers to understand their needs and then drive solutions into our product
+\end{itemize}
+\textit{Advisory Software Engineer} \hfill June 2019 - January 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Designed and implemented a way to use our own service to run all our infrastructure components
+	\item Implemented a managed Etcd service with built in disaster recovery and redundancy
+	\item Worked directly with customers to increase the resiliency of their services by implementing scalable solutions like auto-scaling and live migration
+\end{itemize}
+\textit{Staff Software Engineer} \hfill June 2017 - June 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Continued to implement features for the bootstrap microservice that includes supporting multiple operating systems, upgrading major/minor versions, and different machine flavors; including Baremetals, VSIs and GPUs.
+	\item Contributed to the health monitoring component that customers can use to detect and remedy issues with their data plane components
+	\item Reduced single points of failure and increase redundancy by creating high-available solutions across our stack
+\end{itemize}
+\textit{Site Reliability Engineer} \hfill August 2015 - June 2017\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Created a microservice that bootstrapped workers into kubernetes clusters, that was spun off into its own project that I currently lead today
+	\item Monitored and maintained our Openstack Cloud offering
+	\item Worked on monitoring and autorecovery tools to increase our overall uptime
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\textbf{The University of Toledo}\hfill Toledo, Ohio\\
+BS Computer Science, Electrical Engineering \textit{GPA: 3.7} \hfill August 2010 - August 2015\\
+\vspace{2mm}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages:      & Go, Java                                                                      \\
+	Scripting Languages:        & Python, Shell, Bash                                                           \\
+	Databases:                  & etcd, MySQL                                                                   \\
+	Containers / Orchestration: & Kubernetes, container runtimes, Microservices, as a service (IaaS/PaaS/SaaS)  \\
+	DevOps Tools:               & Ansible, Travis CI, Jenkins, Prometheus, LogDNA, Git/GitHub, PagerDuty, Slack \\
+	General:                    & Linux/UNIX, REST, data modeling                                               \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{Spotify workout BPM playlist}}\\
+A server side web application that will tailor your workout based of your desired genre and BPM throughout the workout\\
+\vspace*{2mm}
+
+
+
+\
+\end{document}

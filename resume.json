@@ -1,0 +1,157 @@
+{
+  "selectedTemplate": 1,
+  "headings": {
+    "projects": "",
+    "awards": "",
+    "work": "Experience"
+  },
+  "basics": {
+    "name": "Kodie Glosser",
+    "email": "kodieglosser@gmail.com",
+    "location": {
+      "address": "Austin, TX"
+    },
+    "phone": "(419)494-1868",
+    "website": "linkedin.com/in/kodieglosser"
+  },
+  "education": [
+    {
+      "area": "Computer Science, Electrical Engineering",
+      "endDate": "August 2015",
+      "gpa": "3.7",
+      "institution": "The University of Toledo",
+      "location": "Toledo, Ohio",
+      "studyType": "BS",
+      "startDate": "August 2010"
+    }
+  ],
+  "work": [
+    {
+      "location": "Austin, TX",
+      "website": "",
+      "endDate": "Present",
+      "highlights": [
+        "Squad lead of multinational team responsible for the dynamic provisioning and configuration of Kubernetes clusters for IBM’s container service offerings",
+        "Define business objectives and technical requirements for involved teams including setting timelines, writing epics, and acting as a liaison between development and management",
+        "Architecting and designing our next generation container runtime offering, HyperShift",
+        "Ensure delivery of BI-Weekly kubernetes minor/major version and security updates to our customers with zero down time",
+        "Designed a cloud agnostic runtime system; IBM Cloud Satellite, to allow any cloud provider to run on our managed OpenShift offering",
+        "Develop and maintain dozens of Go microservices providing core APIs and event-driven backend",
+        "Responsible for oversight of PCI, SOC2, GDPR, EU Cloud, and FS Cloud Compliance",
+        "Regularly work with high value customers to understand their needs and then drive solutions into our product"
+      ],
+      "company": "IBM",
+      "position": "Development Team Lead - Senior Software Engineer",
+      "startDate": "January 2021"
+    },
+    {
+      "highlights": [
+        "Designed and implemented a way to use our own service to run all our infrastructure components",
+        "Implemented a managed Etcd service with built in disaster recovery and redundancy",
+        "Worked directly with customers to increase the resiliency of their services by implementing scalable solutions like auto-scaling and live migration",
+        ""
+      ],
+      "position": "Advisory Software Engineer",
+      "startDate": "June 2019",
+      "endDate": "January 2021"
+    },
+    {
+      "highlights": [
+        "Continued to implement features for the bootstrap microservice that includes supporting multiple operating systems, upgrading major/minor versions, and different machine flavors; including Baremetals, VSIs and GPUs.",
+        "Contributed to the health monitoring component that customers can use to detect and remedy issues with their data plane components",
+        "Reduced single points of failure and increase redundancy by creating high-available solutions across our stack"
+      ],
+      "position": "Staff Software Engineer",
+      "startDate": "June 2017",
+      "endDate": "June 2019"
+    },
+    {
+      "highlights": [
+        "Created a microservice that bootstrapped workers into kubernetes clusters, that was spun off into its own project that I currently lead today",
+        "Monitored and maintained our Openstack Cloud offering",
+        "Worked on monitoring and autorecovery tools to increase our overall uptime",
+        ""
+      ],
+      "position": "Site Reliability Engineer",
+      "startDate": "August 2015",
+      "endDate": "June 2017"
+    }
+  ],
+  "skills": [
+    {
+      "keywords": [
+        "Go",
+        "Java"
+      ],
+      "name": "Programming Languages"
+    },
+    {
+      "keywords": [
+        "Python",
+        "Shell",
+        "Bash"
+      ],
+      "name": "Scripting Languages"
+    },
+    {
+      "keywords": [
+        "etcd",
+        "MySQL"
+      ],
+      "name": "Databases"
+    },
+    {
+      "keywords": [
+        "Kubernetes",
+        "container runtimes",
+        "Microservices",
+        "as a service (IaaS/PaaS/SaaS)"
+      ],
+      "name": "Containers / Orchestration"
+    },
+    {
+      "keywords": [
+        "Ansible",
+        "Travis CI",
+        "Jenkins",
+        "Prometheus",
+        "LogDNA",
+        "Git/GitHub",
+        "PagerDuty",
+        "Slack"
+      ],
+      "name": "DevOps Tools"
+    },
+    {
+      "keywords": [
+        "Linux/UNIX",
+        "REST",
+        "data modeling",
+        null
+      ],
+      "name": "General"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Spotify workout BPM playlist",
+      "url": "",
+      "keywords": [
+        null
+      ],
+      "description": "A server side web application that will tailor your workout based of your desired genre and BPM  throughout the workout"
+    }
+  ],
+  "awards": [
+    {}
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "work",
+    "education",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}
